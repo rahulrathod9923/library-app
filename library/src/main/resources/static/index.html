@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+        <h1>Library App</h1>
+
+        <button id="books-btn">Books</button>
+        <button id="users-btn">Users</button>
+
+        <div id="books-section" style="display: block;">
+            <h2>Create Book</h2>
+            <div id="book-form">
+                <label for="book-bookName">Book Name:</label>
+                <input type="text" id="book-bookName" placeholder="Book Name">
+                <label for="book-author">Author:</label>
+                <input type="text" id="book-author" placeholder="Author">
+                <button onclick="createBook()">Create Book</button>
+            </div>
+            <h2>Book List</h2>
+            <div id="books"></div>
+        </div>
+
+        <div id="users-section" style="display: none;">
+            <h2>Create User</h2>
+            <div id="user-form">
+                <label for="user-nameOfUser">Name:</label>
+                <input type="text" id="user-nameOfUser" placeholder="User Name">
+                <label for="user-bookName">Book Name:</label>
+                <input type="text" id="user-bookName" placeholder="Book Name">
+                <label for="user-author">Author:</label>
+                <input type="text" id="user-author" placeholder="Author">
+                <label for="user-dateOfIssue">Issued:</label>
+                <input type="date" id="user-dateOfIssue" placeholder="Date of Issue">
+                <label for="user-returnDate">Submission:</label>
+                <input type="date" id="user-returnDate" placeholder="Date of Submission">
+                <button onclick="createUser()">Create User</button>
+            </div>
+            <h2>User List</h2>
+            <div id="users"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </center>
+</body>
+</html>
