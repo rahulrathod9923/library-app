@@ -1,0 +1,1 @@
+This is a application for manage books and its corrosponding readers/users, There is a two modules in spring boot one is Books for managing books and another is Users for managing readers. In Spring boot there is html, css and javascript file for getting response from spring boot rest api's and for ui; files located in location: main\resources\static.
